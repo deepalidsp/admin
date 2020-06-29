@@ -31,3 +31,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
+Route::resource('feedback', 'FeedbackController');
+Route::resource('purchase', 'PurchaseController');
+Route::resource('tailoring', 'TailoringController');
